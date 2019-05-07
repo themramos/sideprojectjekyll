@@ -1,0 +1,21 @@
+---
+layout: default
+hello: "hello world"
+tags:
+     jekyll <br/>
+     blog <br/>
+     minimalista <br/>
+show_footer: true
+---
+<h1>{{layout.hello}} </h1>
+
+    {% for tag in layout.tags -%}
+    
+     <h2>  {{ tag }} </h2>
+
+    {% endfor %}
+{% if layout.show_footer %}
+   <footer>
+	   <p> By Marcos Ramos </p>
+  </footer>
+{% endif %}
